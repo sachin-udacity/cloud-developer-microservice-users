@@ -13,7 +13,7 @@ COPY package*.json ./
 RUN npm install
 
 # Run audit
-npm audit fix
+RUN npm audit fix
 
 # Copy app source
 COPY . .
