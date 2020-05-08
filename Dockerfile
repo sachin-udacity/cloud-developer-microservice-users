@@ -12,6 +12,9 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
+# Run audit
+npm audit fix
+
 # Copy app source
 COPY . .
 
